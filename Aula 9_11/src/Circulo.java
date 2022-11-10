@@ -1,5 +1,3 @@
-import java.lang.annotation.Documented;
-
 public class Circulo implements AreaCalculavel {
     float raio;
     Circulo(float raio){
