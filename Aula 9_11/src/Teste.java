@@ -1,19 +1,19 @@
-import java.util.Vector;
+import java.util.Scanner;
 
 public class Teste {
+    static String forma;
+    float raio;
     public static void main(String[] args) {
-        Circulo circulo = new Circulo(5);
-        //System.out.println(circulo.areaCalculada()+"cm²");
-        Quadrado quadrado = new Quadrado(3);
-        //System.out.println(quadrado.areaCalculada()+"cm²");
-        Retangulo retangulo = new Retangulo(5, 2);
-        //System.out.println(retangulo.areaCalculada()+"cm²");
-        Vector<AreaCalculavel> area = new Vector<>();
-        area.add(retangulo);
-        area.add(circulo);
-        area.add(quadrado);
-        for (AreaCalculavel x: area){
-            System.out.println(x.areaCalculada()+"cm²");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Qual forma gostaria de calcular?\n");
+        System.out.println("C para Círculo \n Q para Quadrado \n R para retângulo");
+        forma = scanner.nextLine();
+        forma.toUpperCase();
+        switch(forma){
+            case "C" :{
+                Circulo c = new Circulo(scanner.nextFloat());
+                c.areaCalculada();
+            }
         }
     }
     
