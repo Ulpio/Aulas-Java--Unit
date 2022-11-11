@@ -4,7 +4,7 @@ public class Retangulo implements AreaCalculavel{
 
     Retangulo(float base, float altura){
         this.base = base;
-        this.altura = base;
+        this.altura = altura;
     }
     
     @Override
