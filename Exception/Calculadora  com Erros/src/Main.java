@@ -8,6 +8,8 @@ public class Main {
         String operacao;
         Scanner entrada = new Scanner(System.in);
         System.out.println("Seja bem vindo(a) á calculadora mais pica das galáxias");
+        System.out.println("Insira a operação desejada");
+        operacao = entrada.next();
         try {
             System.out.println("Insira o primeiro valor:");
             numero1 = entrada.nextInt();
@@ -16,8 +18,7 @@ public class Main {
         } catch (InputMismatchException e) {
             throw new EntradaInvalida();
         }
-        System.out.println("Insira a operação desejada");
-        operacao = entrada.next();
+        
 
 
         switch(operacao){
