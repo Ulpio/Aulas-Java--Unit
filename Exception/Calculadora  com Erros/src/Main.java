@@ -9,9 +9,9 @@ public class Main {
         Scanner entrada = new Scanner(System.in);
         System.out.println("Seja bem vindo(a) á calculadora mais pica das galáxias");
         try {
-            System.out.println("Insira o primeiro valor:\n");
+            System.out.println("Insira o primeiro valor:");
             numero1 = entrada.nextInt();
-            System.out.println("Insira o segundo Valor:\n");
+            System.out.println("Insira o segundo Valor:");
             numero2 = entrada.nextInt();
         } catch (InputMismatchException e) {
             throw new EntradaInvalida();
@@ -53,7 +53,7 @@ public class Main {
                 }
             }
             default:{
-                System.out.println("deu ruim aí");
+                System.out.println("Operação inválida");
             }
 
         }
