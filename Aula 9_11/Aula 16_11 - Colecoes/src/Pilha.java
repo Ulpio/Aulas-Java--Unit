@@ -2,6 +2,15 @@ import java.nio.charset.MalformedInputException;
 import java.util.Stack;
 
 public class Pilha {
+    /*
+     * Crie uma pilha.
+     *  Insira v ́arios elementos na Pilha.
+     *  Mostre o elemento do topo da Pilha.
+     *  Retire o elemento da Pilha.
+     *  Mostre a quantidade de elementos inseridos na Pilha.
+     *  Indique a posi ̧c ̃ao de um elemento (a contar a partir do topo da Pilha).
+     *  Limpa a Pilha (apagar todos os elementos da Pilha).
+     */
     public static void main(String[] args) {
         final Stack pilha = new Stack<>();
         Carro c1 = new Carro();
@@ -17,12 +26,15 @@ public class Pilha {
         pilha.pop();
         System.out.println(pilha.size());
         System.out.println(pilha.get(2));
-        pilha.pop();
-        pilha.pop();
-        pilha.pop();
+        pilha.clear();
         System.out.println(pilha.size());
-        System.out.println(pilha.empty());
-        
+        if (pilha.empty()){
+            System.out.println("Pilha está vazia");
+        }
+        else{
+            System.out.println("Pilha não tá vazia");
+        }
+
     }
         
 }
