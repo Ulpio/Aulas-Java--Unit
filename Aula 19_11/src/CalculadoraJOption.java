@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class MainJP {
+public class CalculadoraJOption {
     public static void main(String[] args) {
         float num1,num2;
         String operacao;
